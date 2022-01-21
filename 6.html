@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Sidang Seminar -  SISTA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-image: linear-gradient(#b4b6b9, #8ea3df)  ; color: rgb(0, 0, 0); ">
+    <div class="container-fluid" style="margin: 20px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="text-align: center;">Sistem Informasi Seminar Tugas Akhir - SISTA</h1>
+                <ul class="nav" style="padding-bottom: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="7.html">jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="5.html">Daftar Seminar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="6.html">Daftar Sidang </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="9.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <h5>Pendaftan Seminar berlaku untuk mahasiswa ysng telah mendadpat persetujuan dari Pembimbing TA</h5>
+          <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    
+ <!-- Main content -->
+ <div class="container-fluid" style="margin-top: 10px;">
+    <fieldset style="border: solid;">
+        <legend style="padding: 20px;">Form Daftar Seminar TA</legend>
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6" >
+                <div class="card" style="margin-bottom: 15px;">
+                  <div class="card-body" >
+    
+                      <div class="form-group row">
+                        <label for="id" class="col-4 col-form-label">NIM :</label> 
+                        <div class="col-8">
+                          <input id="id" name="id" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="text" class="col-4 col-form-label">Nama :</label> 
+                        <div class="col-8">
+                          <input id="text" name="text" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="select" class="col-4 col-form-label">Prodi :</label> 
+                        <div class="col-8">
+                          <select id="select" name="select" class="custom-select">
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Twknik Informatika">Teknik Informatik</option>
+                            <option value=""></option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-4 col-form-label" for="date">Tanggal Seminar :</label> 
+                        <div class="col-8">
+                          <div class="input-group">
+                            <input id="date" name="date" type="text" class="form-control"> 
+                            <div class="input-group-append">
+                              <div class="input-group-text">
+                                <i class="fa fa-calendar-plus"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="id" class="col-4 col-form-label">Jam Seminar :</label> 
+                        <div class="col-8">
+                          <input id="id" name="id" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="number" class="col-4 col-form-label">Ruangan :</label> 
+                        <div class="col-8">
+                          <input id="number" name="number" type="text" class="form-control">
+                        </div>
+                      </div> 
+                      <div class="form-group row">
+                        <div class="offset-4 col-8">
+                            <a href="4.html" class="btn btn-primary" >Daftar</a> 
+                        </div>
+                      </div>
+                  </div>
+                </div>
+    
+              </div>
+              <!-- /.col-md-6 -->
+              <div class="col-lg-6" style="margin-top: 20px;">
+                <!-- <div class="card" style="padding: 15px; border: none;"> -->
+                    <div class="form-group row">
+                      <label for="textarea" class="col-4 col-form-label">Judul TA :</label> 
+                      <div class="col-8">
+                        <textarea id="textarea" name="textarea" cols="40" rows="3" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="select" class="col-4 col-form-label">Seminar :</label> 
+                      <div class="col-8">
+                        <select id="select" name="select" class="custom-select">
+                          <option value="Proposal">Proposal</option>
+                          <option value="Seminar Hasil">Seminar Hasil</option>
+                          <option value="Seminar Akhir">Seminar Akhir</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="select1" class="col-4 col-form-label">Pembimbing</label> 
+                      <div class="col-8">
+                        <select id="select1" name="select1" class="custom-select">
+                          <option value="Sirojul Munir S.SS, M,KOM">Sirojul Munir S.SS, M,KOM</option>
+                          <option value="Dr. Lukman Rosyidi, M.T., M.M.">Dr. Lukman Rosyidi, M.T., M.M.</option>
+                          <option value="Imdra Hermawan">Indra Hermawan</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="select2" class="col-4 col-form-label">Penguji 1 :</label> 
+                      <div class="col-8">
+                        <select id="select2" name="select2" class="custom-select">
+                          <option value="Ahmad Rio M.SI">Ahmad Rio M.SI</option>
+                          <option value="Yahya Zulkarnain">Yahya Zulkarnain</option>
+                          <option value="Aqil Wilda">Aqil Wilda</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="select3" class="col-4 col-form-label">Penguji 2 :</label> 
+                      <div class="col-8">
+                        <select id="select3" name="select3" class="custom-select">
+                          <option value="Amalia Rahmah M.T">Amalia Rahmah M.T</option>
+                          <option value="Yessi Nur Handayani">Yessi Nur Handayani</option>
+                          <option value="Rusmanto">Rusmanto</option>
+                        </select>
+                      </div>
+                    </div> 
+                
+              </div>
+              <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+            </div><!-- /.container-fluid -->
+         </div>
+        <!-- /.content -->
+        </div>
+      <!-- /.content-wrapper -->
+    </fieldset> 
+ </div>
+
+        
+</body>
+</html>

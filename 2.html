@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - SISTA</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition layout-top-nav">
+  <div class="wrapper" >
+    <!-- Navbar -->
+    <div class="container1" style="margin-top: 10px;">  
+      <div class="row" style="background-image: linear-gradient(#b4b6b9, #beccf1)  ; color: rgb(0, 0, 0); ">
+          
+        <div class="col-md-2" >
+              <img src="img/logo.png" alt="" weight="200px" height="200px" style="margin: 25px;">
+          </div>
+          <div class="col-10 mt-5" >
+            
+            <ul class="nav" style=" justify-content: right; font-size :x-large; ">
+              <li class="nav-item">
+                  <a class="nav-link active" href="1.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="7.html">jadwal</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="5.html">Daftar Seminar</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="6.html">Daftar Sidang</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="9.html">About</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+    <!-- /.navbar -->
+   <div class="register-page" style="background-image: url(img/login.jpeg)">
+    <h1 style="text-align: center; margin: 10px;" >Sistem Informasi Tugas Akhir - SISTA</h1>
+    <div class="row justify-content-md-center">
+      <div class="wrapper">
+        <div class="login-box">
+          <div class="login-logo">
+            <b>login</b>
+          </div>
+          <!-- /.login-logo -->
+          <div class="card">
+            <div class="card-body login-card-body">
+              <form action="" method="post">
+                <div class="input-group mb-3">
+                  <input id="username" type="email" class="form-control" placeholder="Email">
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-envelope"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <input id="password" type="password" class="form-control" placeholder="Password">
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-lock"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-8">
+                    <div class="icheck-primary">
+                      <input type="checkbox" id="remember">
+                      <label for="remember">
+                        Remember Me
+                      </label>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-4">
+                    <!-- <a href="3.html"><button type="submit" class="btn btn-primary btn-block">Sign In</button></a> -->
+                    <button class="btn btn-primary btn-lg active" type="submit" onclick="login()">Login</button>
+                  </div>
+                  <!-- /.col -->
+                </div>
+              </form>
+        
+              <!-- /.social-auth-links -->
+        
+              <p class="mb-1">
+                <a href="forgot-password.html">I forgot my password</a>
+              </p>
+              <p class="mb-0">
+                <a href="3.html" class="text-center">Register a new membership</a>
+              </p>
+            </div>
+            <!-- /.login-card-body -->
+          </div>
+        </div>
+        </div>
+    </div>
+   </div>
+   </div>
+  </div>
+
+<script>
+  const failLogin = () => alert("Username atau password salah")
+  
+const successLogin = () => {
+    console.log("username benar");
+    location.href = "1.html";
+}
+
+const login = () => {
+    const username = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+    console.log(username);
+    console.log(pass);
+    if(username === 'faisal19' && pass === 'mantap123'){
+        alert('Login Berhasil')
+        successLogin();
+    } else {
+        failLogin()
+    }
+}
+</script>
+<!-- /.register-box -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
